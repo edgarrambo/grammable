@@ -5,6 +5,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
            has_many :grams
-           belongs_to :gram
 
 end
