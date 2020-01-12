@@ -66,7 +66,6 @@ group :development, :test do
   gem "factory_bot_rails"
 
 end
-
 gem 'jquery-rails'
 
 gem 'popper_js', '~> 1.11.1'
@@ -77,3 +76,6 @@ source 'https://rails-assets.org' do
 end
 gem 'simple_form'
 gem 'devise'
+gem 'carrierwave', '~> 2.0'
+gem "fog-aws"
+
