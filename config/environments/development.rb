@@ -60,11 +60,7 @@ Rails.application.configure do
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
-  aws_config = File.open(Rails.root.join("config","application.yml"))
-yaml = YAML.load(aws_config)
-yaml.each do |k, v|
-  ENV[k] = v
+  
 
 end
 
-end
